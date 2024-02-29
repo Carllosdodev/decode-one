@@ -3,56 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="<!--aqui vai favicon-->" type="image/x-icon">
+    <title>Decodificador de Textos</title>
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
-    <header class=""> <!--Aqui vai cabecalho-->
-        <img class="" src="" alt="">
-        <nav class="">
-            <a class="" href="">
-                <img src="" alt="">
+    <header class="cabecalho"> <!--Aqui vai cabecalho-->
+        <img class="cabecalho_logo" src="./assets/Frame 6.png" alt="Logo Alura">
+        <nav class="cabecalho_menu">
+            <a class="cabecalho_menu_link" href=""> <!--links redes sociais-->
+                <img src="./assets/github.svg">
             </a>
-            <a class="" href="">
-                <img src="" alt="">
+            <a class="cabecalho_menu_link" href="">
+                <img src="./assets/linkedin.svg">
             </a>
         </nav>
     </header>
-    <main class="">
-        <section class="">
-            <div class=""> <!--inserir paragrafos e add algumas divs-->
-                <p class="">Escreva o seu texto abaixo:</p>
-                <p class=""><strong>Cuidado:</strong>inserir apenas letras minúsculas e sem acento por gentileza</p>
+    <main class="decodificador">
+        <section class="decodificador_entrada">
+            <div class="decodificador_entrada_link"> <!--inserir paragrafos e add algumas divs-->
+                <p class="decodificador_entrada_paragrafo">Escreva o seu texto abaixo:</p>
+                <p class="decodificador_entrada_aviso"><strong>Cuidado:</strong>inserir apenas letras minúsculas e sem acento por gentileza</p>
                 
             </div>
-            <div class=""> <!--campostos de texto-->
-                <div class=""><!--caixa de cripotografia-->
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="decodificador_caixatxt"> <!--campostos de texto-->
+                <div class="decodificador_caixatxt_entrada"><!--caixa de cripotografia-->
+                    <textarea name="texto-entrada" id="" cols="15" rows="10" wrap="hard" minlength="10" maxlength="200" placeholder="Nenhuma mensagem encontrada" required></textarea>
 
                     <button></button>
                 </div>
 
-                <div class=""> <!--caixa de descriptografar-->
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                <div class="decodificador_caixatxt_saida"> <!--caixa de descriptografar-->
+                    <textarea name="texto-saida" id="" cols="15" rows="10" wrap="hard" minlength="10" maxlength="200" placeholder="Nenhuma mensagem encontrada" required></textarea>
 
                     <button></button>
                 </div>
                 <button>
                     <img class="" src="" alt="">
                 </button>
-                <div>
+                <div id="">
                     <div>
                         <!--tag <span class=""</span>-->
-                        <p></p>
+                        <p id="">Copiado</p>
                     </div>
                 </div>
             </div>
         </section>
-        <img class="" src="" alt="">
+        <img class="decodificador_img" src="" alt="">
     </main>
-    <footer class="">
-        <p class="">&copy; 2024 Desenvolvido por Antonio Carlos</p>
+    <footer class="rodape">
+        <p class="caixa_rodape">&copy; 2024 Desenvolvido por Antonio Carlos</p>
     </footer>
 
     <script src="script.js"></script>
