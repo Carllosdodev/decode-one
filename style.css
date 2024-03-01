@@ -33,8 +33,9 @@ body {
 }
 
 .cabecalho_logo {
-    width: 200px;
-    height: 70px;
+    width: 120px;
+    height: 48px;
+    box-shadow: none;
 
 }
 
@@ -111,18 +112,35 @@ body {
 
 }
 
-# {
-
+#inputTexto {
+    width: 350px;
+    height: 310px;
+    border-radius: 15px;
+    background-color: var(--cor-quartenaria);
+    border: none;
+    border-style: none;
+    /* gap: 23px; */
+    outline: none;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 22px;
+    padding-top: 31px;
+    resize: none;
 }
 
-# {
 
-}
 
-. 
-
-#::placeholder  {
-
+#inputTexto::placeholder  {
+    width: 294px;
+    height: 25px;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 3px;
+    padding-top: 0px;
 }
 
 .botton-criptografar {
@@ -150,13 +168,28 @@ body {
     background-color: var(--cor-hover);
     color: var(--cor-primaria);
     transition: 2ms;
+    transform: scale(1.2);
     
 
 }
 
 
 #outputTexto {
-
+    width: 350px;
+    height: 310px;
+    border-radius: 15px;
+    background-color: var(--cor-quartenaria);
+    border: none;
+    border-style: none;
+    /* gap: 23px; */
+    outline: none;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 22px;
+    padding-top: 31px;
+    resize: none;
 }
 
 .botton-descriptografar {
@@ -184,6 +217,7 @@ body {
     background-color: var(--cor-hover);
     color: var(--cor-primaria);
     transition: 2ms;
+    transform: scale(1.2);
 
 }
 
@@ -218,18 +252,45 @@ body {
 }
 
 .modal-content {
-    
+    background-color: var(--cor-quartenaria);
+    margin: 15%; auto;
+    padding: 8px;
+    border: 10px solid var(--cor-quartenaria);
+    width: 10%;
+    border-radius: 10px;
 }
 
+#modalText {
+    display: flex;
+    justify-content: center;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+    align-items: center;
+}
 .decodificador_img {
-
+    width: 315px;
+    height: 499px;
+    padding-left: 55px;
 }
 
 .rodape {
+    padding-top: 90px;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 
 }
 
 .caixa_rodape {
+    width: 300px;
+    height: 23px;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    font-size: 15px;
+    font-weight: 400;
 
 }
 
