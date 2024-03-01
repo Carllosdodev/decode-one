@@ -22,30 +22,30 @@
     </header>
     <main class="decodificador">
         <section class="decodificador_entrada">
-            <div class="decodificador_entrada_link"> <!--inserir paragrafos e add algumas divs-->
+            <div class="decodificador_entrada_titulos"> <!--inserir paragrafos e add algumas divs-->
                 <p class="decodificador_entrada_paragrafo">Escreva o seu texto abaixo:</p>
                 <p class="decodificador_entrada_aviso"><strong>Cuidado:</strong>inserir apenas letras minúsculas e sem acento por gentileza</p>
                 
             </div>
             <div class="decodificador_caixatxt"> <!--campostos de texto-->
                 <div class="decodificador_caixatxt_entrada"><!--caixa de cripotografia-->
-                    <textarea name="texto-entrada" id="" cols="15" rows="10" wrap="hard" minlength="10" maxlength="200" placeholder="Nenhuma mensagem encontrada" required></textarea>
+                    <textarea name="texto-entrada" id="inputTexto" cols="15" rows="10" wrap="hard" minlength="10" maxlength="200" placeholder="Nenhuma mensagem encontrada" required></textarea>
 
                     <button></button>
                 </div>
 
                 <div class="decodificador_caixatxt_saida"> <!--caixa de descriptografar-->
-                    <textarea name="texto-saida" id="" cols="15" rows="10" wrap="hard" minlength="10" maxlength="200" placeholder="Nenhuma mensagem encontrada" required></textarea>
+                    <textarea name="texto-saida" id="outputTexto" cols="15" rows="10" wrap="hard" minlength="10" maxlength="200" placeholder="Nenhuma mensagem encontrada" required></textarea>
 
                     <button></button>
                 </div>
                 <button>
-                    <img class="" src="" alt="">
+                    <img class="botton_copiar_icone" src="" alt="">
                 </button>
-                <div id="">
-                    <div>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
                         <!--tag <span class=""</span>-->
-                        <p id="">Copiado</p>
+                        <p id="modaltext">Copiado</p>
                     </div>
                 </div>
             </div>
