@@ -5,7 +5,7 @@
     --cor-secundaria:#B4D4FF;
     --cor-terciaria: #86B6F6;
     --cor-quartenaria: #176B87;
-    --cor-hover: #4682A9;
+    --cor-hover: #0d7bc4;
 
     --fonte-principal: 'Montserrat', sans-serif;
 }
@@ -87,6 +87,10 @@ body {
 
 }
 
+.img_frame {
+    margin-top: 20px;
+}
+
 .decodificador_entrada_aviso {
     font-size: 12px;
     font-weight: 500;
@@ -157,7 +161,7 @@ body {
     font-family: var(--fonte-principal);
     font-size: 12px;
     font-weight: 500;
-    padding: 15px;
+    padding: 20px;
     text-decoration: none;
     cursor: pointer;
 
@@ -206,7 +210,7 @@ body {
     font-family: var(--fonte-principal);
     font-size: 12px;
     font-weight: 500;
-    padding: 15px;
+    padding: 20px;
     text-decoration: none;
     cursor: pointer;
 
@@ -229,11 +233,13 @@ body {
     border: none;
     display: flex;
     cursor: pointer;
+    position: static;
 
 }
 
 .botton_copiar_icone {
-    padding-top: 24px;
+    padding-top: 28px;
+    padding-left: 10px;
     transform: translate(-280%);
     opacity: 85%;
 
@@ -253,7 +259,7 @@ body {
 
 .modal-content {
     background-color: var(--cor-quartenaria);
-    margin: 15%; auto;
+    margin: 15% auto;
     padding: 8px;
     border: 10px solid var(--cor-quartenaria);
     width: 10%;
@@ -273,25 +279,97 @@ body {
     width: 315px;
     height: 499px;
     padding-left: 55px;
+    
 }
 
 .rodape {
-    padding-top: 90px;
+    bottom: 0;
+    width: 100%;
+    padding-top: 100px;
     padding-bottom: 15px;
     align-items: center;
     justify-content: center;
     display: flex;
+    padding: 1em;
+    position: fixed;
 
 }
 
 .caixa_rodape {
     width: 300px;
     height: 23px;
-    color: var(--cor-secundaria);
+    color: var(--cor-quartenaria);
     font-family: var(--fonte-principal);
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 600;
 
 }
 
 /* aqui vai responsividade */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cabecalho_menu {
+      display: flex;
+      align-items: center;
+    }
+
+    .decodificador_entrada,
+    .decodificador_img {
+      width: 70%;
+      margin: 0 auto; 
+    }
+
+    .decodificador_caixatxt {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 20px; 
+    }
+
+    .decodificador_caixatxt_entrada,
+    .decodificador_caixatxt_saida {
+      flex: 1; 
+    }
+  }
+
+
+@media (max-width: 768px) {
+    
+    .cabecalho {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .cabecalho_menu {
+      display: none;
+    }
+
+    .decodificador {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .decodificador_entrada,
+    .decodificador_img {
+      width: 100%;
+    }
+
+    .decodificador_caixatxt {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px; 
+    }
+
+    .botton-criptografar,
+    .botton-descriptografar,
+    .botton_copiar {
+      margin: 10px 0; 
+    }
+
+    .rodape {
+        padding-top: 50px;
+    }
+  }
+
