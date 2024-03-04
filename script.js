@@ -1,64 +1,95 @@
 //constantes
+function exibirResultado(tag, texto) {
+    let campo = document.querySelector(tag);
+    campo.innerHTML = texto;
+   
+   
+}
 // Função para criptografar o texto
 function criptografar() {
     // Selecione o texto de entrada e saída
-    var textoEntrada = document.getElementById("inputTexto").value;
-    var textoSaida = document.getElementById("outputTexto");
-
-    // Implemente sua lógica de criptografia aqui
-    // Por exemplo:
-    // var textoCriptografado = ...;
-
-    // Atualize o texto de saída com o texto criptografado
-    // textoSaida.value = textoCriptografado;
-}
-
-// Função para descriptografar o texto
-function descriptografar() {
-    // Selecione o texto de entrada e saída
-    var textoSaida = document.getElementById("outputTexto").value;
-    var textoEntrada = document.getElementById("inputTexto");
-
+    let textoEntrada = document.getElementById("campoTexto").value;
+    let resultadoCripto = textoEntrada.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
     
-    // Implemente sua lógica de descriptografia aqui
-    // Por exemplo:
-    // var textoDescriptografado = ...;
+    if (textoEntrada == 0) {
+        let textoIndicacao = "Nenhuma mensagem encontrada";
+        let textoIndicacao2 = "Digite um texto que você deseja criptografar ou descriptografar.";
+        exibirResultado('#campoTexto', textoIndicacao);
+        exibirResultado('#campoTexto2', textoIndicacao2);
+        imagem('block');
+        document.getElementById('bottonCopiar').style.display = 'none';
+    } else {
+        exibirResultado('#campoTexto', resultadoCripto );
+        exibirResultado('#campoTexto2', "");
+        imagem('none');
+        document.getElementById('bottonCopiar').style.display = 'block';
 
-    // Atualize o texto de entrada com o texto descriptografado
-    // textoEntrada.value = textoDescriptografado;
-}
-
-// Função para copiar o texto de saída para a área de transferência
-function copiar() {
-    // Selecione o texto de saída
-    var textoSaida = document.getElementById("outputTexto");
-    
-    // Verifique se há conteúdo no texto de saída
-    if (textoSaida.value.length > 0) {
-        // Seleciona o texto de saída
-        textoSaida.select();
-        // Copie o texto selecionado para a área de transferência
-        document.execCommand("copy");
-
-        // Exiba uma mensagem de "Copiado" usando um modal
-        var modal = document.getElementById("modal");
-        modal.style.display = "block";
-
-        // Oculta o modal após alguns segundos (opcional)
-        setTimeout(function() {
-            modal.style.display = "none";
-        }, 2000);
     }
+    limparCampo();
 }
+    
+    
+    // funcao para descripografar o texto
+    function descriptografar() {
+        var textoEntrada = document.getElementById('campoTexto2').value;
+        var resultadoCripto = textoEntrada.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
+        if(textoEntrada == 0) {
+            var textoIndicacao = "Nenhuma mensagem encontrada";
+            var textoIndicacao2 = "Digite um texto que você deseja criptografar ou descriptografar.";
+            exibirResultado('#campoTexto', textoIndicacao);
+            exibirResultado('#campoTexto2', textoIndicacao2);
+            imagem('block');
+            document.getElementById('bottonCopiar').style.display = 'none';
+        } else {
+            exibirResultado('#campoTexto', resultadoCripto );
+            exibirResultado('#campoTexto2', "");
+            imagem('none');
+            document.getElementById('bottonCopiar').style.display = 'block';
+        }
 
-// Função para fechar o modal
-function fecharModal() {
-    var modal = document.getElementById("modal");
-    modal.style.display = "none";
-}
+        limparCampo();
+    }
 
-// Adiciona um ouvinte de evento ao botão de copiar
-document.getElementById("botton_copiar").addEventListener("click", copiar);
+    function limparCampo() {
+        var  texto = document.getElementById('campoTexto');
+        texto.value = '';
+    }
 
+    function imagem(display) {
+        document.getElementById('decodificadorImg').style.display = display;
+    }
+    function copiar () {
+        var textoResultado = document.getElementById('texto2').textContent;
+
+        if (textoResultado) {
+            var textArea = document.createElement('textarea');
+            textArea.value = textoResultado;
+            textArea.style.position = 'fixed';
+            document.body.appendChild(textArea);
+            
+            textArea.select();
+
+            try {
+                document.execCommand('copy');
+                console.log('Texto copiado: ' + textoResultado);
+            } catch (err) {
+                console.error('Erro ao copiar texto: ', err );
+            }
+
+            document.body.removeChild(textArea);
+
+            documento.getElementById('texto').innerHTML = '';
+
+            document.getElementById('bottonCopiar').style.display = 'none';
+
+            location.reload();
+        } else {
+            console.log('Nenhum texto para copiar.');
+        }
+    }
+
+document.getElementById('bottonCriptografar').addEventListener('click', criptografar);
+document.getElementById('bottonDescriptografar').addEventListener('click', descriptografar);
+document.getElementById('bottonCopiar').addEventListener('click', copiar);
 
 

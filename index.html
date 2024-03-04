@@ -10,7 +10,9 @@
 </head>
 <body>
     <header class="cabecalho"> <!--Aqui vai cabecalho-->
-        <img class="cabecalho_logo" src="./assets/Frame 6.png" alt="Logo Alura">
+        <a class="cabecalho_logo" href="https://www.alura.com.br/" target="_blank">
+            <img class="cabecalho_logo" src="./assets/Frame 6.png" alt="Logo Alura">
+        </a>
         <nav class="cabecalho_menu">
             <a class="cabecalho_menu_link" href="https://github.com/Carllosdodev" target="_blank"> <!--links redes sociais-->
                 <img src="./assets/github.svg">
@@ -30,19 +32,19 @@
             </div>
             <div class="decodificador_caixatxt"> <!--campostos de texto-->
                 <div class="decodificador_caixatxt_entrada"><!--caixa de cripotografia-->
-                    <textarea name="texto-entrada" id="inputTexto" cols="15" rows="10" wrap="hard" minlength="10" maxlength="200" placeholder="Nenhuma mensagem encontrada" required></textarea>
+                    <textarea name="texto-entrada" id="campoTexto" cols="15" rows="10" wrap="hard" minlength="10" maxlength="200" placeholder="Nenhuma mensagem encontrada" class="texto" required></textarea>
 
 
 
-                    <button onclick="criptografar()" id="botton-criptografar" type="submit" class="botton-criptografar">Criptografar</button>
+                    <button id="bottonCriptografar" type="submit" class="botton-criptografar">Criptografar</button>
                 </div>
 
                 <div class="decodificador_caixatxt_saida"> <!--caixa de descriptografar-->
-                    <textarea name="texto-saida" id="outputTexto" cols="15" rows="10" wrap="hard" minlength="10" maxlength="200" required></textarea>
+                    <textarea name="texto-saida" id="campoTexto2" cols="15" rows="10" wrap="hard" minlength="10" maxlength="200" class="texto2" required></textarea>
 
-                    <button onclick="descriptografar()" id="botton-descriptografar" type="submit" class="botton-descriptografar">Descriptografar</button>
+                    <button id="bottonDescriptografar" type="submit" class="botton-descriptografar">Descriptografar</button>
                 </div>
-                <button onclick="copiar()" id="botton_copiar" class="botton_copiar" alt="botao copiar">
+                <button  id="bottonCopiar" class="botton_copiar" alt="botao copiar">
                     <img class="botton_copiar_icone" src="./assets/btn-copy.svg" alt="Copiar">
                 </button>
                 <div id="modal" class="modal">
@@ -53,7 +55,7 @@
                 </div>
             </div>
         </section>
-        <img class="decodificador_img" src="./assets/High quality products 1 1.svg" alt="">
+        <img class="decodificador_img" id="decodificadorImg" src="./assets/High quality products 1 1.svg" alt="">
         
     </main>
     <footer class="rodape">
