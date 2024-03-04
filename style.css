@@ -53,6 +53,7 @@ body {
     width: 60px;
     height: 30px;
     cursor: pointer;
+    margin-left: 20px;
 
 
 }
@@ -111,8 +112,9 @@ body {
     flex-direction: column;
     justify-content: space-between;
     text-overflow: ellipsis;
-    gap: 23px;
+    gap: 10px;
     align-items:center;
+
 
 }
 
@@ -164,6 +166,7 @@ body {
     padding: 20px;
     text-decoration: none;
     cursor: pointer;
+    
 
 
 }
@@ -245,6 +248,9 @@ body {
 
 }
 
+   
+
+
 .modal {
     display: none;
     position: fixed;
@@ -278,7 +284,9 @@ body {
 .decodificador_img {
     width: 315px;
     height: 499px;
+    padding-inline-end: 55px;
     padding-left: 55px;
+    
     
 }
 
@@ -315,7 +323,7 @@ body {
 
     .decodificador_entrada,
     .decodificador_img {
-      width: 70%;
+      width: 80%;
       margin: 0 auto; 
     }
 
@@ -340,6 +348,7 @@ body {
       align-items: center;
     }
 
+    
     .cabecalho_menu {
       display: none;
     }
