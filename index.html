@@ -1,68 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/favicon-16x16.png" type="image/x-icon">
     <title>Decodificador de Textos</title>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
+
 <body>
-    <header class="cabecalho"> <!--Aqui vai cabecalho-->
-        <a class="cabecalho_logo" href="https://www.alura.com.br/" target="_blank">
-            <img class="cabecalho_logo" src="./assets/Frame 6.png" alt="Logo Alura">
-        </a>
+    <header class="cabecalho"><!--criar cabecalho-->
+        <img class="cabecalho_logo" src="./assets/logo.svg" alt="Logo Alura">
         <nav class="cabecalho_menu">
-            <a class="cabecalho_menu_link" href="https://github.com/Carllosdodev" target="_blank"> <!--links redes sociais-->
-                <img src="./assets/github.svg">
+            <a class="cabecalho_menu_link" href="https://github.com/Carllosdodev" alt="Github" target="_blank">
+                <img src="./assets/github.svg" alt="Logo github">
             </a>
-            <a class="cabecalho_menu_link" href="https://www.linkedin.com/in/antonio-carlos-b75a72280/" target="_blank">
-                <img src="./assets/linkedin.svg">
+            <a class="cabecalho_menu_link" href="https://www.linkedin.com/in/antonio-carlos-b75a72280/" alt="linkedin" target="_blank">
+                <img src="./assets/linkedin.svg" alt="">
             </a>
         </nav>
+
     </header>
-    <main class="decodificador">
-        <section class="decodificador_entrada">
-            <div class="decodificador_entrada_titulos"> <!--inserir paragrafos e add algumas divs-->
-                <p class="decodificador_entrada_paragrafo">Decodifique seu texto</p>
-                
-                <img class="img_frame" src="./assets/Frame 1.png" width="215" height="18" alt="frame1">
-                
+    <main>
+        <section>
+            <textarea id="" placeholder="Digique o seu texto" class="texto" cols="30" rows="10"></textarea>
+
+            <div>
+                <img src="./assets/Frame 1.png" alt="">
+
             </div>
-            <div class="decodificador_caixatxt"> <!--campostos de texto-->
-                <div class="decodificador_caixatxt_entrada"><!--caixa de cripotografia-->
-                    <textarea name="texto-entrada" id="campoTexto" cols="15" rows="10" wrap="hard" minlength="10" maxlength="200" placeholder="Nenhuma mensagem encontrada" class="texto" required></textarea>
-
-
-
-                    <button id="bottonCriptografar" type="submit" class="botton-criptografar">Criptografar</button>
-                </div>
-
-                <div class="decodificador_caixatxt_saida"> <!--caixa de descriptografar-->
-                    <textarea name="texto-saida" id="campoTexto2" cols="15" rows="10" wrap="hard" minlength="10" maxlength="200" class="texto2" required></textarea>
-
-                    <button id="bottonDescriptografar" type="submit" class="botton-descriptografar">Descriptografar</button>
-                </div>
-                <button  id="bottonCopiar" class="botton_copiar" alt="botao copiar">
-                    <img class="botton_copiar_icone" src="./assets/btn-copy.svg" alt="Copiar">
+            <div>
+                <button id="">
+                    <img src="" alt="">
                 </button>
-                <div id="modal" class="modal">
-                    <div class="modal-content">
-                        <!--tag <span class=""</span>-->
-                        <p id="modaltext">Copiado</p>
-                    </div>
-                </div>
+                <button id="">
+                    <img src="" alt="">
+                </button>
             </div>
         </section>
-        <img class="decodificador_img" id="decodificadorImg" src="./assets/High quality products 1 1.svg" alt="">
-        
+
+        <section>
+            <div>
+                <img src="" alt="">
+
+                <h2 id=""></h2>
+                <p id=""></p>
+            </div>
+
+            <div>
+                <button id="">Copiar</button>
+            </div>
+        </section>
     </main>
-    <footer class="rodape">
-        <p class="caixa_rodape">&copy; 2024 Desenvolvido por Antonio Carlos</p>
+    <footer>
+        <p>&copy; 2024 Desenvolvido por Antonio</p>
     </footer>
 
     <script src="./script.js"></script>
+
+
 </body>
+
 </html>
-        
+
+
+
