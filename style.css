@@ -5,7 +5,8 @@
     --cor-secundaria: #042f3d;
     --cor-terciaria: #f6dc86;
     --cor-quartenaria: #07495f;
-    --cor-hover: #0362a1;
+    --cor-hover: #0A3871;
+    --cor-decripto: #D8DFE8;
     --fonte-principal: 'Montserrat', sans-serif;
 }
 
@@ -16,8 +17,9 @@
 
 body {
     box-sizing: border-box;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
 }
+/* cabecalho do texto */
 
 .cabecalho {
     display: flex;
@@ -36,11 +38,157 @@ body {
     flex-direction: row;
     transform: translate(740%);
 }
-
 .cabelho_menu_link{
     display: flex;
     justify-content: flex-end;
     width: 60px;
     height: 30px;
     cursor: pointer;
+}
+
+.apresentacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apresentacao_botao {
+    justify-content: center;
+    margin: 10px;
+    margin-top: 8%;
+    margin-left: 95px;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+
+.imagem_exclamacao_texto {
+    font-size: 1.2rem;
+}
+
+.apresentacao_esquerda {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#campoTexto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 80%;
+    background: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 16px;
+    /*colocar var aqui */
+    font-family: var(--fonte-principal);
+}
+
+textarea::placeholder {
+    color: var(--cor-hover);
+    font-size: 32px;
+}
+/*caixa de texto criptografia */
+#texto {
+    font-size: 1.4rem;
+    color: var(--cor-secundaria);
+}
+
+#texto2 {
+    font-size: 1.1rem;
+    color: var(--cor-secundaria);
+}
+
+.img_exclamacao {
+    width: 4%;
+}
+
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+.botao_cripto {
+    background: var(--cor-hover);
+    display: flex;
+    justify-content: center;
+    width: 328px;
+    height: 67px;
+    border: 2px solid var(--cor-hover);
+    border-radius: 24px;
+    text-align: center;
+    align-items: center;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 24px;
+    text-decoration: none;
+    cursor: pointer;
+    gap: 8px;
+}
+
+.botao_descripto {
+    background: var(--cor-decripto);
+    display: flex;
+    justify-content: center;
+    width: 328px;
+    height: 67px;
+    border: 2px solid var(--cor-hover);
+    border-radius: 24px;
+    text-align: center;
+    align-items: center;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 24px;
+    text-decoration: none;
+    cursor: pointer;
+    gap: 8px;
+}
+
+.apresentacao_direita {
+    align-items: center;
+    width: 40%;
+    height: 800px;
+    background: var(--cor-quartenaria);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    
+}
+/*criar rodape */
+
+.rodape {
+    padding: 90px;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 20px;
+}
+
+.rodape_txt {
+    width: 18,7500em;
+    height: 1,4375em;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: italic;
+
 }

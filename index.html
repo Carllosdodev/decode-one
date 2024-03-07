@@ -15,55 +15,61 @@
         <img class="cabecalho_logo" src="./assets/logo.svg" alt="Logo Alura">
         <nav class="cabecalho_menu">
             <a class="cabecalho_menu_link" href="https://github.com/Carllosdodev" alt="Github" target="_blank">
-                <img src="./assets/github.svg" alt="Logo github">
+                <img class="cabelho_menu_link"  src="./assets/github.svg" alt="Logo github">
             </a>
             <a class="cabecalho_menu_link" href="https://www.linkedin.com/in/antonio-carlos-b75a72280/" alt="linkedin" target="_blank">
-                <img src="./assets/linkedin.svg" alt="">
+                <img class="cabelho_menu_link" src="./assets/linkedin.svg" alt="">
             </a>
         </nav>
 
     </header>
-    <main>
-        <section>
-            <textarea id="" placeholder="Digique o seu texto" class="texto" cols="30" rows="10"></textarea>
+    <main class="apresentacao">
+        <section class="apresentacao_esquerda">
+            <textarea id="campoTexto" placeholder="Digite o seu texto" class="texto" cols="30" rows="24"></textarea>
 
-            <div>
-                <img src="./assets/Frame 1.png" alt="">
+            <div class="apresentacao_botao">
+                <img class="img_exclamacao" src="./assets/exclamacao.png" alt="Apenas Letras minusculas e sem acento">
+                <p class="imagem_exclamacao_texto">Apenas letras minúsculas e sem acento.</p>
+                
 
             </div>
+            <div class="botao">
+                <button id="botaoCriptografar" class="botao_cripto">Criptografar</button>
+                
+                <button id="botaoDescriptografar" class="botao_descripto">Descriptografar</button>
+                
+            </div>
+        </section>
+
+        <section class="apresentacao_direita">
+            
+            <img class="imagem_person" id="imagemPerson" src="./assets/High quality products 1 1.svg" alt="">        
+            <h2 id="texto"></h2>
+            <p id="texto2"></p>
+        
             <div>
-                <button id="">
-                    <img src="" alt="">
-                </button>
-                <button id="">
-                    <img src="" alt="">
-                </button>
+                <button id="botaoCopiar">Copiar</button>
             </div>
         </section>
 
-        <section>
-            <div>
-                <img src="" alt="">
-
-                <h2 id=""></h2>
-                <p id=""></p>
-            </div>
-
-            <div>
-                <button id="">Copiar</button>
-            </div>
-        </section>
+        <button onclick="limparcampos()">Limpar</button>
     </main>
-    <footer>
-        <p>&copy; 2024 Desenvolvido por Antonio</p>
+    <footer class="rodape">
+        <p class="rodape_txt">&copy; 2024 Desenvolvido por Antonio</p>
     </footer>
 
-    <script src="./script.js"></script>
-
-
+        <script src="./script.js"></script>
 </body>
 
 </html>
+        
+        
+
+
+
+                    
+                    
+
 
 
 
