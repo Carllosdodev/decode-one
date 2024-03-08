@@ -16,6 +16,7 @@
 }
 
 body {
+    width: 100%;
     box-sizing: border-box;
     background-color: var(--cor-terciaria);
 }
@@ -29,7 +30,7 @@ body {
 }
 
 .cabecalho_logo  {
-    width: 183px;
+    width: 175px;
     height: 80px;
 }
 .cabecalho_menu {
@@ -41,9 +42,10 @@ body {
 .cabelho_menu_link{
     display: flex;
     justify-content: flex-end;
-    width: 60px;
-    height: 30px;
+    width: 80px;
+    height: 35px;
     cursor: pointer;
+    gap: 10px;
 }
 
 .apresentacao {
@@ -53,23 +55,35 @@ body {
 }
 
 .apresentacao_botao {
-    justify-content: center;
-    margin: 10px;
-    margin-top: 8%;
-    margin-left: 95px;
+    display: flex;
     align-items: center;
-    gap: 30px;
+    text-align: center;
+    margin: 5px;
+    margin-top: 8%;
+    margin-left: 11%;
+    gap: 10px;
     
 }
+    
+    
 
 
 .imagem_exclamacao_texto {
-    font-size: 1.2rem;
+    font-size: 1rem;
+
+    
 }
 
+.img_exclamacao {
+    width: 4%;
+    margin-right: 4px;
+
+}
+
+
 .apresentacao_esquerda {
-    width: 90%;
-    height: 90%;
+    width: 55%;
+    height: 85%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -81,7 +95,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 90%;
-    width: 80%;
+    width: 56%;
     background: transparent;
     border: none;
     outline: none;
@@ -105,11 +119,6 @@ textarea::placeholder {
     font-size: 1.1rem;
     color: var(--cor-secundaria);
 }
-
-.img_exclamacao {
-    width: 4%;
-}
-
 
 .botao {
     display: flex;
@@ -162,8 +171,8 @@ textarea::placeholder {
 
 .apresentacao_direita {
     align-items: center;
-    width: 40%;
-    height: 800px;
+    width: 30%;
+    height: 625px;
     background: var(--cor-quartenaria);
     border-radius: 24px;
     display: flex;
@@ -173,22 +182,63 @@ textarea::placeholder {
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     
 }
+
+.imagem_person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    margin: 10px;
+}
+
+#imagemPerson {
+    width: 336px;
+    height: 304px;
+    margin-top: 5%;
+    /* corrigir imagem */
+}
+
+#botaoCopiar {
+    font-size: 1.2rem;
+    color: var(--cor-secundaria);
+}
+
+.botao_copiar {
+    background: var(--cor-decripto);
+    display: flex;
+    justify-content: center;
+    width: 328px;
+    height: 67px;
+    border: 2px solid var(--cor-hover);
+    border-radius: 24px;
+    text-align: center;
+    align-items: center;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 32px;
+    text-decoration: none;
+    cursor: pointer;
+    gap: 20px;
+    margin: 30px;
+}
 /*criar rodape */
 
 .rodape {
-    padding: 90px;
-    padding-bottom: 30px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    background-color:var(--cor-hover); /* Cor de fundo do rodapé */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .rodape_txt {
-    width: 18,7500em;
-    height: 1,4375em;
+    color:var(--cor-primaria); /* Cor do texto do rodapé */
     font-size: 17px;
     font-weight: 400;
     font-style: italic;
-
 }
+
+
