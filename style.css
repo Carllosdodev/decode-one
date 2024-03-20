@@ -31,7 +31,8 @@ body {
 }
 
 .cabecalho_logo  {
-
+    width: 175px;
+    height: 80px;
 }
 .cabecalho_menu {
 
@@ -64,8 +65,10 @@ body {
 }
 
 /* área para colocar caixa de texto e criar botoes */
-.apresentacao_esquerda {
+.apresentacao_entrda
 
+.apresentacao_saida {
+    
 }
 
 #campoTexto {
@@ -108,10 +111,7 @@ textarea::placeholder {
 
 
 /* caixa do resultado do texto*/
-.apresentacao_direita {
- 
-    
-}
+
 
 
 
