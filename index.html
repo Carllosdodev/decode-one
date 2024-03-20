@@ -12,61 +12,51 @@
 
 
 </head>
+    <body>
+        <header>
+            <img class="logo" src="./assets/Frame 6.png" alt="Logo da Alura">
 
-<body>
-    <header class="cabecalho"><!--criar cabecalho-->
-        <img class="cabecalho_logo" src="./assets/logo.svg" alt="Logo Alura">
-        <nav class="cabecalho_menu">
-            <a class="cabecalho_menu_link" href="https://github.com/Carllosdodev" alt="Github" target="_blank">
-                <img class="cabelho_menu_link"  src="./assets/github.svg" alt="Logo github">
-            </a>
-            <a class="cabecalho_menu_link" href="https://www.linkedin.com/in/antonio-carlos-b75a72280/" alt="linkedin" target="_blank">
-                <img class="cabelho_menu_link" src="./assets/linkedin.svg" alt="">
-            </a>
-        </nav>
+        </header>
+        <section class="apresentacao_entrada">
+            <textarea class="textoDeEntrada" placeholder="Digite o seu texto" autofocus class="texto" cols="30"
+                rows="24"></textarea>
 
-    </header>
-    <main class="apresentacao">
-        <section class="apresentacao_esquerda">
-            <textarea id="campoTexto" placeholder="Digite o seu texto" class="texto" cols="30" rows="24"></textarea>
+            <div class="apresentacao_exclamacao">
+                <img class="img_exclamacao" src="./assets/exclamacao.png" alt="Ponto de exclamação">
+                <label for="obeservarcao">Apenas letras minúsculas e sem acento.</label>
 
-            <div class="apresentacao_botao">
-                <img class="img_exclamacao" src="./assets/exclamacao.png" alt="Apenas Letras minusculas e sem acento">
-                <p class="imagem_exclamacao_texto">Apenas letras minúsculas e sem acento.</p>
-                
 
             </div>
-            <div class="botao">
+            <div class="botao_entrada">
                 <button id="botaoCriptografar" class="botao_cripto">Criptografar</button>
-                
+
                 <button id="botaoDescriptografar" class="botao_descripto">Descriptografar</button>
-                
+
             </div>
         </section>
 
-        <section class="apresentacao_direita">
-
-            <h2 id="texto"></h2>
-            <p id="texto2"></p>
-        
-            <div>
-                <button id="botaoCopiar" class="botao_copiar">Copiar</button>
-                
+        <section class="apresentacao_saida">
+            <textarea class="textoDeSaida" cols="30" rows="10" contenteditable="true" disabled></textarea>
+            <button class="botaoCopiar" onclick="copiar()">Copiar</button>
+            <div class="aviso">
+                <img class="imagemBoneco" src="./assets/High quality products 1 1.svg" alt="Moca olhando uma lupa">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <h4>Digite um texto que você deseja criptografar ou descriptografar.</h4>
             </div>
+            <!--<h2 id="texto"></h2>
+                <p id="texto2"></p> -->
         </section>
-
-       
-    </main>
-    <footer class="rodape">
-        <p class="rodape_txt">&copy; 2024 Desenvolvido por Antonio</p>
-    </footer>
-
-        <script src="./script.js"></script>
-</body>
-
+        <footer class="rodape">
+                <p>&copy; 2024 Desenvolvido por Antonio Carlos</p>
+        </footer>
+    </body>
+    <script src="./script.js"></script>
+    
 </html>
-        
-        
+            
+
+
+
 
 
 

@@ -6,13 +6,16 @@
     --cor-terciaria: #f6dc86;
     --cor-quartenaria: #07495f;
     --cor-hover: #0A3871;
-    --cor-decripto: #D8DFE8;
-    --fonte-principal: 'Montserrat', sans-serif;
+    --cor-decripto: #FFFBF5;
+    
 }
 
 * {
     margin: 0;
     padding: 0;
+    line-height: 150%;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -20,150 +23,212 @@ body {
     justify-content: space-around;
     height: 100vh;
     background-color: var(--cor-terciaria);
-    padding: 5%;
+    padding: 6%;
     box-sizing: border-box;
     
 }
 /* cabecalho do texto */
 
-.cabecalho {
-
+.apresentacao_entrada {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
+
 
 .cabecalho_logo  {
     width: 175px;
     height: 80px;
 }
-.cabecalho_menu {
-
-}
-.cabelho_menu_link{
-
-}
-
-.apresentacao {
-
-}
-
-.apresentacao_botao {
-
-}
-    
-    
-
-
-.imagem_exclamacao_texto {
-    font-size: 1rem;
-
-    
-}
-
-.img_exclamacao {
-    width: 4%;
-    margin-right: 4px;
-
-}
-
-/* área para colocar caixa de texto e criar botoes */
-.apresentacao_entrda
-
 .apresentacao_saida {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-decripto);
+    border-radius: 2rem;
 }
 
-#campoTexto {
+.textoDeEntrada, .textoDeSaida {
+    border: none;
+    outline: none;
+    resize: none;
+}
 
-    
-
+.textoDeEntrada {
+    font-size: 2rem;   
+    background-color: var(--cor-terciaria);
+    color: var(--cor-hover);
+    flex-grow: 1;
+    padding-top: 15%;
 }
 
 textarea::placeholder {
-
-}
-/*caixa de texto criptografia */
-#texto {
-
+    color: var(--cor-hover);
 }
 
-
-#texto2 {
-
+.textoDeSaida {
+    font-size: 1.2rem;
+    background-color: var(--cor-hover);
+    display: none;
+    margin: 1.5rem;
+    position: relative;
 }
 
-.botao {
-
+.botao_entrada {
+    display: flex;
+    gap: 2rem;
 }
 
-
+.botao_cripto, .botao_descripto {
+    width: 20.5rem;
+    height: 4.1rem;
+    border-radius: 24px;
+    cursor: pointer;
+    gap: 10px;
+    
+}
 
 .botao_cripto {
-
+    border: none;
+    background-color: var(--cor-hover);
+    color: var(--cor-primaria);
+    
 }
 
 .botao_descripto {
-
+    background-color: var(--cor-decripto);
+    border-color: var(--cor-quartenaria);
+    
 }
 
-.botao_cripto:hover, .botao_descripto:hover {
+.aviso {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 40%;
+    
+    
+    
+}
+
+
+.botaoCopiar {
+    width: 22rem;
+    height: 4.1rem;
+    border-radius: 1.5rem;
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-hover);
+    display: none;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+
+.botao_cripto:hover, .botao_descripto:hover, .botaoCopiar:hover {
     transform: scale(1.1);
     transition: 1.2ms;
 }
 
 
-/* caixa do resultado do texto*/
 
 
 
+.cabecalho_menu_link_img{
+    width: 2em;
+}
 
 
-#botaoCopiar {
+
+.imagem_exclamacao_texto {
+    font-size: 1rem;
+    
+
+    
+}
+
+.img_exclamacao {
+    width: 3%;
+    margin-right: 4px;
 
 }
 
 
 
-
-.botao_copiar {
-
-}
-
-.botao_copiar:hover {
+.botaoCopiar:hover {
     transform: scale(1.1);
     transition: 1.2ms;
 }
 /*criar rodape */
 
 .rodape {
-    padding: 30px;
+    padding: 10px;
     text-align: center;
-    background-color:var(--cor-hover); /* Cor de fundo do rodapé */
+    background-color: transparent;
+    color: var(--cor-hover);
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-.rodape_txt {
-    color:var(--cor-primaria); /* Cor do texto do rodapé */
-    font-size: 17px;
-    font-weight: 400;
-    font-style: italic;
-}
 
-@media screen and (min-width: 376px) {
-    .botao {
-        flex-direction: row;
+
+@media (max-width: 1340px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 5%;
+        margin-bottom: 2%;
+        padding: 0;
+    }
+
+    .imagemBoneco {
+        display: none;
+    }
+
+    .apresentacao_entrada {
+        padding-top: 7%;
+        height: 70%;
+    }
+
+    .apresentacao_saida {
+        width: auto;
+        height: auto;
+        margin: 5%;
+    }
+
+    .botao_entrada {
+        justify-content: center;
+    }
+
+    .textoDeEntrada {
+        height: 20rem;
+        padding-top: 0;
+    }
+    .textoDeSaida {
+        width: -webkit-fill-available;
+        max-height: 10em;
+    }
+
+    .aviso {
+        margin: 2%;
+    }
+
+    .botaoCopiar {
+        width: 60%;
+    }
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: center;
+        position: relative;
     }
 }
 
-
-@media screen and (min-width: 769px) {
-    
+@media (max-width: 372px) {
+    .botao_entrada {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
 }
-
-
-
-  
-
-
-
-
