@@ -10,50 +10,47 @@
  
     
 
-
 </head>
-    <body>
-        <header>
-            <img class="logo" src="./assets/Frame 6.png" alt="Logo da Alura">
 
-        </header>
-        <section class="apresentacao_entrada">
-            <textarea class="textoDeEntrada" placeholder="Digite o seu texto" autofocus class="texto" cols="30"
-                rows="24"></textarea>
+<body>
+    <header>
+        <img class="logo" src="./assets/Frame 6.png" alt="Logo da Alura">
 
-            <div class="apresentacao_exclamacao">
-                <img class="img_exclamacao" src="./assets/exclamacao.png" alt="Ponto de exclamação">
-                <label for="obeservarcao">Apenas letras minúsculas e sem acento.</label>
+    </header>
+    <section class="apresentacaoDeEntrada">
+        <textarea class="textoDeEntrada" placeholder="Digite o seu texto" autofocus></textarea>
+
+        <div class="apresentacao_exclamacao">
+            <img class="img_exclamacao" src="./assets/exclamacao.png" alt="Ponto de exclamação">
+            <label for="obeservarcao">Apenas letras minúsculas e sem acento.</label>
+
+        </div>
+        <div class="botoesDeEntrada">
+            <button class="botao_cripto" onclick="botaoParaEncriptar()" >Criptografar</button>
+            <button  class="botao_descripto" onclick="botaoParaDescriptografar()">Descriptografar</button>
 
 
-            </div>
-            <div class="botao_entrada">
-                <button id="botaoCriptografar" class="botao_cripto">Criptografar</button>
-
-                <button id="botaoDescriptografar" class="botao_descripto">Descriptografar</button>
-
-            </div>
-        </section>
-
-        <section class="apresentacao_saida">
-            <textarea class="textoDeSaida" cols="30" rows="10" contenteditable="true" disabled></textarea>
+        </div>
+    </section>
+    <section class="apresentacaoDeSaida">
+            <textarea class="textoDeSaida" cols="30" rows="30" contenteditable="true" disabled></textarea>
             <button class="botaoCopiar" onclick="copiar()">Copiar</button>
-            <div class="aviso">
+            <div class="mensagem">
                 <img class="imagemBoneco" src="./assets/High quality products 1 1.svg" alt="Moca olhando uma lupa">
                 <h2>Nenhuma mensagem encontrada</h2>
-                <h4>Digite um texto que você deseja criptografar ou descriptografar.</h4>
+                <h5>Digite um texto que você deseja criptografar ou descriptografar.</h5>
             </div>
-            <!--<h2 id="texto"></h2>
-                <p id="texto2"></p> -->
-        </section>
-        <footer class="rodape">
-                <p>&copy; 2024 Desenvolvido por Antonio Carlos</p>
-        </footer>
-    </body>
-    <script src="./script.js"></script>
-    
+        
+    </section>
+
+    <footer class="rodape">
+        <h2>&copy; 2024 Desenvolvido por<a class="link" href="https://github.com/Carllosdodev" target="_blank"> Antonio Carlos</a></h2>
+    </footer>
+</body>
+<script src="./script.js"></script>
+
 </html>
-            
+
 
 
 
